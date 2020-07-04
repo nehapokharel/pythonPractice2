@@ -1,0 +1,18 @@
+info1 = ('neha', 'pokharel', 22)
+
+info_list = []
+info_list.append(info1)
+info_list.append(('krish', 'sapkota', 23))
+info_list.append(('zyan', 'malla', 24))
+info_list.append(('sujan', 'k.c', 22))
+info_list.sort()
+print(info_list)
+print('Sorting by firstname')
+info_list.sort(key = lambda x: x[0])
+print(info_list)
+print('Sorting by lastname')
+info_list.sort(key = lambda x: x[1])
+print(info_list)
+print('Sorting by age')
+info_list.sort(key = lambda x: x[2])
+print(info_list)
